@@ -14,6 +14,9 @@
         </li>
         <li><NuxtLink to="/profile/123">Profile</NuxtLink></li>
         <li><NuxtLink to="/custom">Custom</NuxtLink></li>
+        <li><NuxtLink to="/login">Login</NuxtLink></li>
+        <li><NuxtLink to="/admin/dashboard">AdminDashboard</NuxtLink></li>
+        <li><NuxtLink to="/admin/info">AdminInfo</NuxtLink></li>
       </ul>
     </nav>
   </header>

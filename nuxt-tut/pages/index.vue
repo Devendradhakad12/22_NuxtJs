@@ -2,8 +2,12 @@
 const route = useRoute();
 const { $sayHello } = useNuxtApp();
 const { sayHello } = useUtils();
+//$sayHello("from index");
 sayHello();
-$sayHello("from index");
+/* 
+definePageMeta({
+  middleware: ["auth"],
+}); */
 </script>
 
 <template>
