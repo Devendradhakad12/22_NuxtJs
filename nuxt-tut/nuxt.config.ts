@@ -3,10 +3,12 @@
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   alias: {
     "@/*": "./src/*",
     assets:"/<rootDir>/assets"
   },
+
   css: ["~/assets/main.scss"],
   postcss: {
     plugins: {
@@ -14,4 +16,6 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  modules: ["@nuxt/content"]
 });

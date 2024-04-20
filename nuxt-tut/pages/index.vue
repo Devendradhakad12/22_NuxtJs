@@ -14,5 +14,6 @@ definePageMeta({
   <div>
     <h1>Nuxt Routing set up successfully!</h1>
     <p>Current route: {{ route.path }}</p>
+    <p>Nuxt Content : <ContentDoc /></p>
   </div>
 </template>
