@@ -19,6 +19,7 @@
         <li><NuxtLink to="/pinia-state">PiniaState</NuxtLink></li>
         <li><NuxtLink to="/admin/dashboard">AdminDashboard</NuxtLink></li>
         <li><NuxtLink to="/admin/info">AdminInfo</NuxtLink></li>
+        <li><NuxtLink to="/datafetch">datafetch</NuxtLink></li>
       </ul>
     </nav>
   </header>

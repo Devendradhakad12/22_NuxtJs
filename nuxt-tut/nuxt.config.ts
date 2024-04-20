@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
   alias: {
     "@/*": "./src/*",
-    assets:"/<rootDir>/assets"
+    assets: "/<rootDir>/assets",
   },
 
   css: ["~/assets/main.scss"],
@@ -17,5 +17,10 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/content","@pinia/nuxt"]
+  modules: ["@nuxt/content", "@pinia/nuxt"],
+  routeRules: {
+    "/": { swr: true },
+    "/events": { ssr: false },
+    "/state": { ssr: true },
+  },
 });
