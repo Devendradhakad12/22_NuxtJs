@@ -19,8 +19,11 @@ export default defineNuxtConfig({
 
   modules: ["@nuxt/content", "@pinia/nuxt"],
   routeRules: {
-    "/": { swr: true },
     "/events": { ssr: false },
     "/state": { ssr: true },
   },
+  hooks:{
+      "ready":(ctx)=>console.log("context from hook",ctx)
+  },
+  
 });

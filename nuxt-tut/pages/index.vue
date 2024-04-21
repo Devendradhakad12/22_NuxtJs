@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const route = useRoute();
-const { $sayHello } = useNuxtApp();
+const { $sayHello } = useNuxtApp() as any;
 const { sayHello } = useUtils();
-//$sayHello("from index");
+$sayHello("from index");
 sayHello();
 /* 
 definePageMeta({
